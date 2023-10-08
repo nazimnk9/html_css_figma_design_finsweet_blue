@@ -145,6 +145,9 @@ h1, h2, h3, h4, h5, h6, p {
 #banner .banner__wrapper .banner__content .banner_btn .banner_btn-a:last-child:hover {
   color: #FCD980;
 }
+#banner .banner__wrapper .banner__content .banner_btn .banner_btn-a .banner_btn-a-i {
+  margin-left: 16px;
+}
 #banner .banner__wrapper .banner__image {
   width: 638px;
 }
