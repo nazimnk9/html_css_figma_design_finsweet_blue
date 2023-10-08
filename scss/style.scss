@@ -4,7 +4,10 @@
 
 /* ======Navbar start====== */
 #nav{
-    background-color: aqua;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: 16px 0;
     .nav__wrapper{
         display: flex;
@@ -24,7 +27,8 @@
                 align-items: center;
                 .nav__menu-li{
                     .nav__menu-a{
-                        @include nav__menu-a($white_gay,$font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                        @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                        color: $white_gay;
                         text-transform: capitalize;
                         transition:  all linear 0.3s;
                         &:hover{
@@ -45,3 +49,63 @@
     }
 }
 /* ======Navbar end====== */
+/* ======banner start====== */
+#banner{
+    background-color: $blue;
+    padding: 218px 0 128px 0;
+    .banner__wrapper{
+        display: flex;
+        column-gap: 60px;
+        align-items: center;
+        .banner__content{
+            width: 582px;
+            .banner__content-h1{
+                font-size: $font_size_54;
+                font-weight: $font_weight_600;
+                color: $white_gay_1;
+                line-height: $line_height_74;
+                font-family: $font_family_p;
+                width: 582px;
+                margin-bottom: 24px;
+            }
+            .banner__content-p{
+                @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                color: $white_gay_1;
+                width: 562px;
+                margin-bottom: 48px;
+            }
+            .banner_btn{
+                .banner_btn-a{
+                    border-radius: 41px;
+                    border: 2px solid $white_gay_20;
+                    padding: 16px 56px;
+                    color: $white;
+                    font-size: $font_size_18;
+                    font-weight: $font_weight_600;
+                    font-family: $font_family_m;
+                    line-height: $line_height_32;
+                    text-transform: capitalize;
+                    background-color: transparent;
+                    transition: all linear 0.3s;
+                    &:hover{
+                        background-color: $yellow;
+                        color: $black;
+                    }
+                    &:last-child{
+                        border: none;
+                        background-color: transparent;
+                        color: $white;
+                        transition: all linear 0.3s;
+                        &:hover{
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+        .banner__image{
+            width: 638px;
+        }
+    }
+}
+/* ======banner end====== */

@@ -1,7 +1,6 @@
 /* ======Nav menu a====== */
 
-@mixin nav__menu-a($white_gay,$font_size_16,$font_weight_500,$font_family_p,$line_height_28){
-    color: $white_gay;
+@mixin nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28){
     font-size: $font_size_16;
     font-weight: $font_weight_500;
     font-family: $font_family_p;
@@ -24,8 +23,8 @@
     font-family: $font_family_p;
     line-height: $line_height_28;
     text-transform: capitalize;
-    transition: all linear 0.3s;
     background-color: transparent;
+    transition: all linear 0.3s;
 }
 
 @mixin nav__btn-a-hover($yellow,$white){
