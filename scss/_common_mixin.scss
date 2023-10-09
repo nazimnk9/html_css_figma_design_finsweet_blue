@@ -51,3 +51,12 @@
     font-family: $font_family_p;
     line-height: $line_height_28;
 }
+
+/* ========projec big overlay h4======== */
+@mixin project__big_overlay-h4($font_size_24,$font_weight_600,$font_family_p,$line_height_36,$white){
+    font-size: $font_size_24;
+    font-weight: $font_weight_600;
+    font-family: $font_family_p;
+    line-height: $line_height_36;
+    color: $white;
+}

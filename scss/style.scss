@@ -137,6 +137,9 @@
                 font-family: $font_family_p;
                 line-height: $line_height_32;
                 color: $light_blue;
+                .work__heading-a-i{
+                    margin-left: 16px;
+                }
             }
         }
         .work__main{
@@ -168,3 +171,121 @@
     }
 }
 /* ======work end====== */
+/* ======project start====== */
+#project{
+    padding: 128px 0;
+    .project__heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .project__heading-h2{
+            @include work__heading-h2($font_size_48,$font_weight_500,$font_family_p,$line_height_64,$dark_blue);
+        }
+        .project__heading-a{
+            @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+            color: $dark_blue;
+            text-transform: capitalize;
+            .project__heading-a-i{
+                margin-left: 16px;
+            }
+        }
+    }
+    .project__main{
+        margin-top: 64px;
+        display: flex;
+        column-gap: 32px;
+        align-items: center;
+        .project__big{
+            width: 843px;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+            .project__big-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .project__big_overlay{
+                width: 396px;
+                height: 100%;
+                position: absolute;
+                left: -396px;
+                top: 0;
+                z-index: 55;
+                background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+                padding: 312px 0 76px 49px;
+                transition: all linear 0.3s;
+                .project__big_overlay-h4{
+                    @include project__big_overlay-h4($font_size_24,$font_weight_600,$font_family_p,$line_height_36,$white);
+                    width: 313px;
+                    margin-bottom: 16px;
+                }
+                .project__big_overlay-p{
+                    @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                    width: 293px;
+                    color: $white;
+                    margin-bottom: 40px;
+                }
+                .project__big_overlay-a{
+                    @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                    color: $yellow;
+                    text-transform: capitalize;
+                    .project__big_overlay-a-i{
+                        margin-left: 16px;
+                    }
+                }
+            }
+            &:hover{
+                .project__big_overlay{
+                    left: 0;
+                }
+            }
+        }
+        .project__small{
+            width: 405px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            .project__small_item{
+                width: 100%;
+                overflow: hidden;
+                height: 284px;
+                position: relative;
+                .project__small_item-img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .project__small_item_overlay{
+                    padding: 129px 36px 45px 56px;
+                    position: absolute;
+                    left: 0;
+                    top: -405px;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+                    transition: all linear 0.3s;
+                    .project__small_item_overlay-h4{
+                        @include project__big_overlay-h4($font_size_24,$font_weight_600,$font_family_p,$line_height_36,$white);
+                        margin-bottom: 10px;
+                        width: 290px;
+                    }
+                    .project__small_item_overlay-a{
+                        @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+                        color: $yellow;
+                        text-transform: capitalize;
+                        .project__small_item_overlay-a-i{
+                            margin-left: 16px;
+                        }
+                    }
+                }
+                &:hover{
+                    .project__small_item_overlay{
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ======project end====== */
