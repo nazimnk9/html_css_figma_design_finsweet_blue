@@ -99,3 +99,12 @@
     line-height: $line_height_32;
     color: $white;
 }
+
+@mixin footer__main-h2($font_size_48,$font_weight_600,$font_family_p,$line_height_64,$white){
+    font-size: $font_size_48;
+    font-weight: $font_weight_600;
+    font-family: $font_family_p;
+    line-height: $line_height_64;
+    color: $white;
+    text-transform: capitalize;
+}
