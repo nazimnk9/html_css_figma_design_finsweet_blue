@@ -52,11 +52,42 @@
     line-height: $line_height_28;
 }
 
-/* ========projec big overlay h4======== */
+/* ========project big overlay h4======== */
 @mixin project__big_overlay-h4($font_size_24,$font_weight_600,$font_family_p,$line_height_36,$white){
     font-size: $font_size_24;
     font-weight: $font_weight_600;
     font-family: $font_family_p;
     line-height: $line_height_36;
     color: $white;
+}
+
+@mixin work__heading-a($font_size_18,$font_weight_500,$font_family_p,$line_height_32,$light_blue){
+    font-size: $font_size_18;
+    font-weight: $font_weight_500;
+    font-family: $font_family_p;
+    line-height: $line_height_32;
+    color: $light_blue;
+}
+
+@mixin client__heading-h2($font_size_38,$font_weight_600,$font_family_p,$line_height_56,$dark_blue){
+    font-size: $font_size_38;
+    font-weight: $font_weight_600;
+    font-family: $font_family_p;
+    line-height: $line_height_56;
+    color: $dark_blue;
+}
+
+@mixin questions__number-span($font_size_24,$font_weight_500,$font_family_p,$line_height_36){
+    font-size: $font_size_24;
+    font-weight: $font_weight_500;
+    font-family: $font_family_p;
+    line-height: $line_height_36;
+}
+
+@mixin question__details-p($font_size_18,$font_weight_500,$font_family_p,$line_height_32,$dark_blue){
+    font-size: $font_size_18;
+    font-weight: $font_weight_500;
+    font-family: $font_family_p;
+    line-height: $line_height_32;
+    color: $dark_blue;
 }
