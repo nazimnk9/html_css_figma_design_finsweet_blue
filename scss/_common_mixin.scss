@@ -91,3 +91,11 @@
     line-height: $line_height_32;
     color: $dark_blue;
 }
+
+@mixin inquiry__form-a($font_size_18,$font_weight_500,$font_family_p,$line_height_32,$white){
+    font-size: $font_size_18;
+    font-weight: $font_weight_500;
+    font-family: $font_family_p;
+    line-height: $line_height_32;
+    color: $white;
+}
