@@ -35,9 +35,9 @@
 
 /* ======Work Heading h2====== */
 
-@mixin work__heading-h2($font_size_48,$font_weight_500,$font_family_p,$line_height_64,$dark_blue){
+@mixin work__heading-h2($font_size_48,$font_weight_600,$font_family_p,$line_height_64,$dark_blue){
     font-size: $font_size_48;
-    font-weight: $font_weight_500;
+    font-weight: $font_weight_600;
     font-family: $font_family_p;
     line-height: $line_height_64;
     color: $dark_blue;

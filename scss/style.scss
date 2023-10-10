@@ -125,7 +125,7 @@
             flex-direction: column;
             row-gap: 16px;
             .work__heading-h2{
-                @include work__heading-h2($font_size_48,$font_weight_500,$font_family_p,$line_height_64,$dark_blue);
+                @include work__heading-h2($font_size_48,$font_weight_600,$font_family_p,$line_height_64,$dark_blue);
             }
             .work__heading-p{
                 @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
@@ -179,7 +179,7 @@
         align-items: center;
         justify-content: space-between;
         .project__heading-h2{
-            @include work__heading-h2($font_size_48,$font_weight_500,$font_family_p,$line_height_64,$dark_blue);
+            @include work__heading-h2($font_size_48,$font_weight_600,$font_family_p,$line_height_64,$dark_blue);
         }
         .project__heading-a{
             @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
@@ -289,3 +289,53 @@
     }
 }
 /* ======project end====== */
+/* ======features start====== */
+#features{
+    background-color: $white_gay_20;
+    padding: 128px 0;
+    .features_heading{
+        text-align: center;
+        .features_heading-h5{
+            @include nav__menu-a($font_size_16,$font_weight_500,$font_family_p,$line_height_28);
+            color: $dark_blue;
+            text-transform: capitalize;
+        }
+        .features_heading-h2{
+            @include work__heading-h2($font_size_48,$font_weight_600,$font_family_p,$line_height_64,$dark_blue);
+            width: 630px;
+            margin: 0 auto;
+            margin: 12px auto 47px auto;
+        }
+    }
+    .features__wrapper{
+        display: flex;
+        row-gap: 24px;
+        column-gap: 32px;
+        flex-wrap: wrap;
+        .features__item{
+            width: 405px;
+            background-color: $white;
+            padding: 58px 32px 48px 48px;
+            .features__icon{
+                .features__icon-i{
+                    color: $light_blue;
+                    font-size: $font_size_32;
+                }
+            }
+            .features__item-h3{
+                font-size: $font_size_24;
+                font-weight: $font_weight_500;
+                font-family: $font_family_p;
+                line-height: $line_height_36;
+                color: $dark_blue;
+                margin-top: 22px;
+            }
+            .features__item-p{
+                @include work__heading-p($font_size_16,$font_weight_400,$font_family_p,$line_height_28);
+                margin-top: 12px;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+/* ======features end====== */
